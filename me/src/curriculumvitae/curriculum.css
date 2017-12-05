@@ -45,3 +45,11 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+.wrapper svg {
+  color: #009688;
+}
+
+.title {
+  font-size: 16px;
+}
