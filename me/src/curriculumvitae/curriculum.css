@@ -1,7 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   color: inherit;
+}
+
+img {
+  border-style: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-top: 1px solid #c4c4c4;
+  margin: 20px 0;
 }
 
 .wrapper {
@@ -17,6 +34,7 @@ a {
   grid-template-rows: 1 / 3;
   grid-row-start: 1;
   grid-row-end: span 2;
+  padding-bottom: 15px;
 }
 
 .workExperience {
@@ -46,10 +64,73 @@ a {
   }
 }
 
+svg:not(:root) {
+  overflow: hidden;
+}
+
 .wrapper svg {
   color: #009688;
+  margin-right: 10px;
 }
 
 .title {
   font-size: 16px;
+}
+
+.imageCV {
+  width: 100%;
+}
+
+.container {
+  padding: 0.01em 16px;
+}
+
+.display-container {
+  position: relative;
+}
+
+.display-bottomleft {
+  position: absolute;
+  left: 5%;
+  bottom: 0;
+  color: white;
+}
+
+.text-gray {
+  color: #757575;
+}
+
+.full-progress {
+  color: #000;
+  background-color: #f1f1f1;
+  border-radius: 16px;
+}
+
+.real-progress {
+  color: #fff;
+  background-color: #009688;
+  border-radius: 16px;
+  height: 24px;
+}
+
+.opacity {
+  opacity: 0.6;
+}
+
+#content {
+  padding: 0.01em 16px;
+}
+
+content,
+h5 {
+  color: #009688;
+}
+
+.tag {
+  color: #fff;
+  display: inline-block;
+  padding: 4px 15px;
+  text-align: center;
+  background-color: #009688;
+  border-radius: 4px;
 }
