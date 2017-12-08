@@ -12,7 +12,7 @@ import tromso from '../images/alberto-ivo-me.jpg'
 const About = () => (
   <div>
     <div className="display-container">
-      <img src={tromso} className="imageCV" alt="Alberto Ivo me" />
+      <img src={tromso} className="imageCV" alt="Alberto Ivo Vieira" />
       <div className="display-bottomleft">
         <h2>Alberto Ivo Vieira</h2>
       </div>
@@ -22,7 +22,7 @@ const About = () => (
         <FaBriefcase size={25} /> Full Stack Developer
       </p>
       <p>
-        <FaHome size={25} /> Brasília, BR
+        <FaHome size={25} /> Brasília, Brazil
       </p>
       <p>
         <FaEnvelope size={25} /> albertoivo@gmail.com

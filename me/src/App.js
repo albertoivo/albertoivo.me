@@ -3,7 +3,11 @@ import Curriculum from './curriculumvitae/Curriculum'
 
 class App extends Component {
   render() {
-    return <Curriculum />
+    return (
+      <div>
+        <Curriculum />
+      </div>
+    )
   }
 }
 
