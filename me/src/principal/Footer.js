@@ -6,8 +6,8 @@ import {
   FaLinkedinSquare
 } from 'react-icons/lib/fa'
 
-const Footer = () => (
-  <div>
+const Footer = ({ css }) => (
+  <div className={css}>
     <p>Find me on social media</p>
     <FaFacebookSquare /> <FaInstagram /> <FaLinkedinSquare />
     <p>
