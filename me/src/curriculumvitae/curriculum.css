@@ -22,7 +22,7 @@ hr {
   color: #757575;
 }
 
-.wrapper {
+.cv-container {
   margin: 20px;
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -50,7 +50,7 @@ hr {
   grid-column: 2fr;
 }
 
-.footer {
+.cv-footer {
   padding: 10px;
   text-align: center;
   color: #fff !important;
@@ -58,7 +58,7 @@ hr {
 }
 
 @media only screen and (max-width: 640px) {
-  .wrapper {
+  .cv-container {
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr;
@@ -69,17 +69,13 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-.wrapper svg {
+.cv-container svg {
   color: #009688;
   margin-right: 10px;
 }
 
 .title {
   font-size: 16px;
-}
-
-.container {
-  padding: 0.01em 16px;
 }
 
 .display-container {

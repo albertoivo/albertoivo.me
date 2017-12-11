@@ -17,7 +17,7 @@ const About = () => (
         <h2>Alberto Ivo Vieira</h2>
       </div>
     </div>
-    <div className="container">
+    <div id="content">
       <p>
         <FaBriefcase size={25} /> Full Stack Developer
       </p>

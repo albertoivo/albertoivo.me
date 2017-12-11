@@ -1,0 +1,13 @@
+.port-container {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(208px, 1fr));
+  grid-template-rows: repeat(20, 117px);
+  grid-gap: 10px;
+}
+
+.port-container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -17,3 +17,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.containerPrincipal {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: minmax(360px, 1fr);
+  grid-gap: 15px;
+  max-width: 1400px;
+}
+
+@media only screen and (max-width: 360px) {
+  .containerPrincipal {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}

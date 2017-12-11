@@ -7,7 +7,7 @@ import './curriculum.css'
 
 const Curriculum = () => (
   <div id="curriculum">
-    <div className="wrapper">
+    <div className="cv-container">
       <div className="about">
         <About />
       </div>
@@ -18,7 +18,7 @@ const Curriculum = () => (
         <Education />
       </div>
     </div>
-    <footer className="footer">
+    <footer className="cv-footer">
       <Footer />
     </footer>
   </div>
