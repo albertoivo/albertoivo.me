@@ -3,12 +3,12 @@ import './portfolio.css'
 
 const Portfolio = () => (
   <div className="port-container">
-    <div style={{ backgroundColor: 'red' }}>1</div>
-    <div style={{ backgroundColor: 'green' }}>2</div>
-    <div style={{ backgroundColor: 'blue' }}>3</div>
-    <div style={{ backgroundColor: 'black' }}>4</div>
-    <div style={{ backgroundColor: 'pink' }}>5</div>
-    <div style={{ backgroundColor: 'yellow' }}>6</div>
+    <div style={{ backgroundColor: 'red' }} />
+    <div style={{ backgroundColor: 'green' }} />
+    <div style={{ backgroundColor: 'blue' }} />
+    <div style={{ backgroundColor: 'black' }} />
+    <div style={{ backgroundColor: 'pink' }} />
+    <div style={{ backgroundColor: 'yellow' }} />
   </div>
 )
 
