@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {
   FaFacebookSquare,
   FaInstagram,
@@ -10,10 +11,7 @@ const Footer = () => (
     <p>Find me on social media</p>
     <FaFacebookSquare /> <FaInstagram /> <FaLinkedinSquare />
     <p>
-      Powered by{' '}
-      <a href="http://albertoivo.me" target="_blank" rel="noopener noreferrer">
-        albertoivo.me
-      </a>
+      Powered by <Link to="/">albertoivo.me</Link>
     </p>
   </div>
 )

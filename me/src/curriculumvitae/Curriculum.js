@@ -6,7 +6,7 @@ import Footer from './Footer'
 import './curriculum.css'
 
 const Curriculum = () => (
-  <div id="curriculum">
+  <div>
     <div className="cv-container">
       <div className="about">
         <About />

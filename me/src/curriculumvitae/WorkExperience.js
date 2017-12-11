@@ -6,7 +6,7 @@ const WorkExperience = () => (
     <h2>
       <FaSuitcase size={30} /> Work Experience
     </h2>
-    <div id="content">
+    <div id="cv-content">
       <h3>
         <b>Full Stack Developer / serpro.gov.br</b>
       </h3>
