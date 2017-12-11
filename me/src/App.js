@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Route, Switch } from 'react-router-dom'
-import Principal from './Principal'
+import Principal from './principal/Principal'
 import Curriculum from './curriculumvitae/Curriculum'
 import Portfolio from './portfolio/Portfolio'
 

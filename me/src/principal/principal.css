@@ -1,0 +1,33 @@
+.princ-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(200px, auto);
+  grid-gap: 15px;
+}
+
+.princ-header {
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://www.w3schools.com/w3images/mac.jpg');
+  min-height: 640px;
+}
+
+.sections {
+  margin: 10px;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: repeat(4, auto-fit);
+  grid-gap: 10px;
+  margin: 10px;
+}
+
+#about > div {
+  text-align: center;
+}
+
+#about div svg {
+  display: table-row-group;
+}
