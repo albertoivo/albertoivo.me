@@ -5,6 +5,11 @@
   grid-gap: 15px;
 }
 
+.princ-container {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.4;
+}
+
 .princ-header {
   background-position: center;
   background-size: cover;
@@ -28,10 +33,12 @@
 
 #about > div {
   text-align: center;
+  padding: 10px 0;
 }
 
 #about div svg {
   display: table-row-group;
+  padding: 10px 0;
 }
 
 .princ-footer {

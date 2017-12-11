@@ -1,33 +1,33 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import { FaHeart } from 'react-icons/lib/fa'
-import { GoCode } from 'react-icons/lib/go'
-import { MdLocalAirport } from 'react-icons/lib/md'
+import { MdLocalAirport, MdPhotoLibrary } from 'react-icons/lib/md'
 import { TiPencil } from 'react-icons/lib/ti'
 
 const About = () => (
   <div id="about">
     <div>
-      <FaHeart size={64} className="icon" />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore.
+      <FaHeart size={64} />
+      Passionate about programming, travel, photographs, sharing knowledge and,
+      of course, my wife.
     </div>
 
     <div>
-      <GoCode size={64} />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore.
+      <MdPhotoLibrary size={64} />
+      Visit my <Link to="/portfolio">portfolio</Link>. Some photos taken in our
+      travels.
     </div>
 
     <div>
       <MdLocalAirport size={64} />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore.
+      Please, get to know our travel blog and our{' '}
+      <a href="https://www.instagram.com/nossasrotas/">instagram account</a> -
+      Nossas Rotas.
     </div>
 
     <div>
       <TiPencil size={64} />
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore.
+      A little about my academic and professional life.
     </div>
   </div>
 )
