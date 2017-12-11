@@ -2,6 +2,11 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -13,24 +18,11 @@ img {
   width: 100%;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.containerPrincipal {
-  margin: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-auto-rows: minmax(360px, 1fr);
-  grid-gap: 15px;
-  max-width: 1400px;
-}
-
-@media only screen and (max-width: 360px) {
-  .containerPrincipal {
-    margin: 10px;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  border: 0;
+  border-top: 1px solid #c4c4c4;
+  margin: 20px 0;
 }
