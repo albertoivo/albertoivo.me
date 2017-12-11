@@ -2,7 +2,7 @@ import React from 'react'
 import About from './About'
 import WorkExperience from './WorkExperience'
 import Education from './Education'
-import Footer from './Footer'
+import Footer from '../principal/Footer'
 import './curriculum.css'
 
 const Curriculum = () => (
@@ -18,9 +18,8 @@ const Curriculum = () => (
         <Education />
       </div>
     </div>
-    <footer className="cv-footer">
-      <Footer />
-    </footer>
+
+    <Footer css={'cv-footer'} />
   </div>
 )
 

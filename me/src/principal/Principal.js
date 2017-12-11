@@ -1,5 +1,6 @@
 import React from 'react'
 import About from './About'
+import Footer from './Footer'
 import './principal.css'
 
 const Principal = () => (
@@ -8,9 +9,11 @@ const Principal = () => (
 
     <About />
 
-    <div className="sections" style={{ backgroundColor: 'green' }} />
-    <div className="sections" style={{ backgroundColor: 'pink' }} />
-    <footer style={{ backgroundColor: 'blue' }} />
+    <div className="sections" />
+
+    <div className="sections" />
+
+    <Footer css={'princ-footer'} />
   </div>
 )
 
