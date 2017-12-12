@@ -27,7 +27,8 @@ const About = () => (
 
     <div>
       <TiPencil size={64} />
-      A little about my academic and professional life.
+      A <Link to="/curriculum">little</Link> about my academic and professional
+      life.
     </div>
   </div>
 )
