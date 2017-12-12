@@ -2,12 +2,35 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  grid-gap: 15px;
 }
 
 .princ-container {
-  font-family: 'Raleway', sans-serif;
   line-height: 1.4;
+  font-variant: small-caps;
+}
+
+.princ-container nav {
+  background-color: #fff;
+  padding: 12px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0 20px 0 0;
+}
+
+header a {
+  color: #fff;
+}
+
+nav a:hover {
+  text-decoration: none;
 }
 
 .princ-header {
@@ -17,28 +40,27 @@
   min-height: 640px;
 }
 
-.sections {
-  margin: 10px;
-  background-color: blue;
-  height: 100px;
-}
-
-#about {
+#info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: repeat(4, auto-fit);
-  grid-gap: 10px;
-  margin: 10px;
 }
 
-#about > div {
+#info > div {
   text-align: center;
-  padding: 10px 0;
 }
 
-#about div svg {
+#info div svg {
   display: table-row-group;
   padding: 10px 0;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: auto;
+  grid-gap: 10px;
+  margin: 10px;
 }
 
 .princ-footer {
@@ -46,4 +68,82 @@
   text-align: center;
   color: #fff !important;
   background-color: #000000;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 24px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 18px;
+}
+
+#contact input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+#contact button {
+  border: none;
+  display: inline-block;
+  outline: 0;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#contact button:hover {
+  color: #000;
+  background-color: #ccc;
+}
+
+#contact-info p {
+  font-size: 24px;
+}
+
+@media only screen and (min-width: 735px) {
+  .toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 735px) {
+  nav ul li {
+    display: block;
+  }
+
+  #nav {
+    transition: transform 0.3s ease-in-out;
+    top: 0;
+    bottom: 0;
+    min-height: 100vh; /* override Safari bug */
+    position: fixed;
+    width: 300px;
+    left: -340px;
+  }
+
+  #nav:target {
+    transform: translateX(340px);
+  }
+
+  .close {
+    text-align: right;
+    display: block;
+    text-decoration: none;
+    font-size: 3em;
+    position: relative;
+    top: -30px;
+  }
 }

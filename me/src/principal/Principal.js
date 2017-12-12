@@ -1,18 +1,18 @@
 import React from 'react'
+import NavBar from './NavBar'
+import Header from './Header'
 import Info from './Info'
+import Contact from './Contact'
 import Footer from './Footer'
+import { GoThreeBars } from 'react-icons/lib/go'
 import './principal.css'
 
 const Principal = () => (
   <div className="princ-container">
-    <header className="princ-header" />
-
+    <NavBar />
+    <Header />
     <Info />
-
-    <div className="sections" />
-
-    <div className="sections" />
-
+    <Contact />
     <Footer css={'princ-footer'} />
   </div>
 )

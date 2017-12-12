@@ -5,30 +5,34 @@ import { MdLocalAirport, MdPhotoLibrary } from 'react-icons/lib/md'
 import { TiPencil } from 'react-icons/lib/ti'
 
 const Info = () => (
-  <div id="about">
-    <div>
-      <FaHeart size={64} />
-      Passionate about programming, travel, photographs, sharing knowledge and,
-      of course, my wife.
-    </div>
+  <div>
+    <p className="section-title">Information</p>
+    <p className="section-subtitle">Key features</p>
+    <div id="info">
+      <div>
+        <FaHeart size={64} />
+        Passionate about programming, travel, photographs, learn new techs and
+        share knowledge.
+      </div>
 
-    <div>
-      <MdPhotoLibrary size={64} />
-      Visit my <Link to="/portfolio">portfolio</Link>. Some photos taken in our
-      travels.
-    </div>
+      <div>
+        <MdPhotoLibrary size={64} />
+        Visit my <Link to="/portfolio">portfolio</Link>. Some photos taken in
+        our travels.
+      </div>
 
-    <div>
-      <MdLocalAirport size={64} />
-      Please, get to know our travel blog and our{' '}
-      <a href="https://www.instagram.com/nossasrotas/">instagram account</a> -
-      Nossas Rotas.
-    </div>
+      <div>
+        <MdLocalAirport size={64} />
+        Please, get to know our travel blog and our{' '}
+        <a href="https://www.instagram.com/nossasrotas/">instagram account</a> -
+        Nossas Rotas.
+      </div>
 
-    <div>
-      <TiPencil size={64} />
-      A <Link to="/curriculum">little</Link> about my academic and professional
-      life.
+      <div>
+        <TiPencil size={64} />
+        A <Link to="/curriculum">little</Link> about my academic and
+        professional life.
+      </div>
     </div>
   </div>
 )
