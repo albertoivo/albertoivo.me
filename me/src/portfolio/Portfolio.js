@@ -1,14 +1,24 @@
 import React from 'react'
+import Footer from '../principal/Footer'
 import './portfolio.css'
 
 const Portfolio = () => (
-  <div className="port-container">
-    <div style={{ backgroundColor: 'red' }} />
-    <div style={{ backgroundColor: 'green' }} />
-    <div style={{ backgroundColor: 'blue' }} />
-    <div style={{ backgroundColor: 'black' }} />
-    <div style={{ backgroundColor: 'pink' }} />
-    <div style={{ backgroundColor: 'yellow' }} />
+  <div>
+    <div className="port-container">
+      <div className="port-menu">oi</div>
+      <div className="port-main">
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+        <div style={{ backgroundColor: 'red' }}>oi</div>
+      </div>
+    </div>
+    <Footer css={'port-footer'} />
   </div>
 )
 
