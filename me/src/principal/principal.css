@@ -2,9 +2,6 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-}
-
-.princ-container {
   line-height: 1.4;
   font-variant: small-caps;
 }
@@ -34,10 +31,11 @@ nav a:hover {
 }
 
 .princ-header {
-  background-position: center;
   background-size: cover;
-  background-image: url('https://www.w3schools.com/w3images/mac.jpg');
-  min-height: 640px;
+  background-position: center;
+  background-image: url('../images/tromso-640p.jpg');
+  width: 100%;
+  height: 640px;
 }
 
 #info {
