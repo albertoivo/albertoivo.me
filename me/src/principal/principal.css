@@ -38,6 +38,12 @@ nav a:hover {
   height: 640px;
 }
 
+@media only screen and (min-width: 1281px) {
+  .princ-header {
+    background-image: url('../images/aurora-1920p.jpg');
+  }
+}
+
 #info {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
