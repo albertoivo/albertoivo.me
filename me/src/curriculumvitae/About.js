@@ -11,7 +11,7 @@ import tromso from '../images/alberto-ivo-me.jpg'
 
 const About = () => (
   <div>
-    <div className="display-container">
+    <div id="picture-name-about">
       <img src={tromso} className="imageCV" alt="Alberto Ivo Vieira" />
       <div className="display-bottomleft">
         <h2>Alberto Ivo Vieira</h2>

@@ -18,7 +18,6 @@ const Curriculum = () => (
         <Education />
       </div>
     </div>
-
     <Footer css={'cv-footer'} />
   </div>
 )
