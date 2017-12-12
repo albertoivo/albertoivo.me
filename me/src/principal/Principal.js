@@ -1,5 +1,5 @@
 import React from 'react'
-import About from './About'
+import Info from './Info'
 import Footer from './Footer'
 import './principal.css'
 
@@ -7,7 +7,7 @@ const Principal = () => (
   <div className="princ-container">
     <header className="princ-header" />
 
-    <About />
+    <Info />
 
     <div className="sections" />
 

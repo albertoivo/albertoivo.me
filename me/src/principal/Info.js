@@ -4,7 +4,7 @@ import { FaHeart } from 'react-icons/lib/fa'
 import { MdLocalAirport, MdPhotoLibrary } from 'react-icons/lib/md'
 import { TiPencil } from 'react-icons/lib/ti'
 
-const About = () => (
+const Info = () => (
   <div id="about">
     <div>
       <FaHeart size={64} />
@@ -33,4 +33,4 @@ const About = () => (
   </div>
 )
 
-export default About
+export default Info
