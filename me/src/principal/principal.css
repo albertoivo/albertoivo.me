@@ -2,12 +2,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
-  align-content: center;
-
   line-height: 1.4;
   font-variant: small-caps;
-
-  max-width: 1400px;
 }
 
 .princ-container nav {
@@ -39,7 +35,6 @@ nav a:hover {
   background-position: center;
   background-image: url('../images/tromso-640p.jpg');
   width: 100%;
-  max-width: 1024px;
   height: 640px;
 }
 
