@@ -33,14 +33,14 @@ nav a:hover {
 .princ-header {
   background-size: cover;
   background-position: center;
-  background-image: url('../images/tromso-640p.jpg');
+  background-image: url('../images/tromso.jpg');
   width: 100%;
   height: 640px;
 }
 
 @media only screen and (min-width: 1281px) {
   .princ-header {
-    background-image: url('../images/aurora-1920p.jpg');
+    background-image: url('../images/aurora.jpg');
   }
 }
 
