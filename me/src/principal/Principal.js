@@ -4,7 +4,6 @@ import Header from './Header'
 import Info from './Info'
 import Contact from './Contact'
 import Footer from './Footer'
-import { GoThreeBars } from 'react-icons/lib/go'
 import './principal.css'
 
 const Principal = () => (
