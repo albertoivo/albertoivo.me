@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import { GoX } from 'react-icons/lib/go'
 
 const NavBar = () => (
-  <nav id="nav" role="navigation">
+  <nav id="nav">
     <a className="toggle close" href="#">
       <GoX />
     </a>
