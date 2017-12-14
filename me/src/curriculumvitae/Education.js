@@ -31,7 +31,7 @@ const Education = () => (
       </h5>
       <hr />
       <h3>
-        <b>Computer Science / Unipe.br</b>
+        <b> Bachelor of Computer Science / Unipe.br</b>
       </h3>
       <h5>
         <FaCalendar />2003 - 2006
