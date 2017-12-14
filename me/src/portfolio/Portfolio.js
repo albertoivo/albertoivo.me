@@ -5,7 +5,16 @@ import './portfolio.css'
 const Portfolio = () => (
   <div>
     <div className="port-container">
-      <div className="port-menu">oi</div>
+      <div className="port-menu">
+        <div id="categories">
+          <ul>
+            <li>Nature</li>
+            <li>Portrait</li>
+            <li>Northern Lights</li>
+            <li>Selective Color</li>
+          </ul>
+        </div>
+      </div>
       <div id="photos">
         <img src="https://placekitten.com/234/234" alt="1" />
         <img src="https://placekitten.com/494/232" alt="2" />
