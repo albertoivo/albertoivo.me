@@ -7,6 +7,7 @@ import {
   FaAsterisk,
   FaGlobe
 } from 'react-icons/lib/fa'
+import { MdPhotoCamera } from 'react-icons/lib/md'
 import tromso from '../images/alberto-ivo-me.jpg'
 import { skills, languages } from '../utils/helper'
 
@@ -30,6 +31,9 @@ const About = () => (
       </p>
       <p>
         <FaGithub size={25} /> /albertoivo
+      </p>
+      <p>
+        <MdPhotoCamera size={25} /> Portfolio
       </p>
 
       <hr />
