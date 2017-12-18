@@ -93,6 +93,10 @@ svg:not(:root) {
   border-radius: 4px;
 }
 
+#skills .tag {
+  margin: 5px;
+}
+
 .cv-container > h1,
 h2,
 h3,

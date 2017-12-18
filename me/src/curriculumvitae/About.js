@@ -8,6 +8,7 @@ import {
   FaGlobe
 } from 'react-icons/lib/fa'
 import tromso from '../images/alberto-ivo-me.jpg'
+import { skills, languages } from '../utils/helper'
 
 const About = () => (
   <div>
@@ -36,18 +37,26 @@ const About = () => (
       <h3>
         <FaAsterisk /> Skills
       </h3>
+
+      <div id="skills">
+        {skills().map(skill => <span className="tag">{skill}</span>)}
+      </div>
       <h3>
         <FaGlobe /> Languages
       </h3>
-      <p>Portuguese</p>
-      <div className="real-progress" />
-      <p>English</p>
-      <div className="full-progress">
-        <div className="real-progress" style={{ width: '90%' }} />
-      </div>
-      <p>Spanish</p>
-      <div className="full-progress">
-        <div className="real-progress" style={{ width: '50%' }} />
+
+      <div id="languages">
+        {languages.map(lang => (
+          <div>
+            <p>{lang.name}</p>
+            <div className="full-progress">
+              <div
+                className="real-progress"
+                style={{ width: lang.knowledge }}
+              />
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   </div>
