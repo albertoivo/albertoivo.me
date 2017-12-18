@@ -8,7 +8,7 @@ const WorkExperience = () => (
       <FaSuitcase size={30} /> Work Experience
     </h2>
     {works.map(work => (
-      <div id="cv-content">
+      <div key={work.local} id="cv-content">
         <h3>
           <b>
             {work.title} / {work.local}

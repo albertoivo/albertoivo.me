@@ -10,7 +10,7 @@ const Education = () => (
       </h2>
     </div>
     {educations.map(edu => (
-      <div id="cv-content">
+      <div key={edu.title} id="cv-content">
         <h3>
           <b>
             {edu.title} / {edu.local}

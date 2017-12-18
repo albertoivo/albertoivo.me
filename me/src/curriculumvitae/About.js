@@ -39,7 +39,11 @@ const About = () => (
       </h3>
 
       <div id="skills">
-        {skills().map(skill => <span className="tag">{skill}</span>)}
+        {skills().map(skill => (
+          <span key={skill} className="tag">
+            {skill}
+          </span>
+        ))}
       </div>
       <h3>
         <FaGlobe /> Languages
@@ -47,7 +51,7 @@ const About = () => (
 
       <div id="languages">
         {languages.map(lang => (
-          <div>
+          <div key={lang.name}>
             <p>{lang.name}</p>
             <div className="full-progress">
               <div
