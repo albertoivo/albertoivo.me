@@ -5,10 +5,10 @@ import { MdLocalAirport, MdPhotoLibrary, MdCode } from 'react-icons/lib/md'
 import { TiPencil } from 'react-icons/lib/ti'
 
 const Info = () => (
-  <div>
+  <div id="info">
     <p className="section-title">Information</p>
     <p className="section-subtitle">Key features</p>
-    <div id="info">
+    <div id="info-key">
       <div>
         <FaHeart size={64} />
         Passionate about programming, travel, photographs, learn new techs and
