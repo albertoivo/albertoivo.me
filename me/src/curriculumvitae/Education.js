@@ -9,8 +9,8 @@ const Education = () => (
         <FaCertificate size={30} /> Education
       </h2>
     </div>
-    {educations.map(edu => (
-      <div key={edu.title} id="cv-content">
+    {educations.map((edu, index) => (
+      <div key={index} id="cv-content">
         <h3>
           <b>
             {edu.title} / {edu.local}

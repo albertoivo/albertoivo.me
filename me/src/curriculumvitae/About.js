@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import {
   FaBriefcase,
   FaHome,
@@ -7,7 +8,7 @@ import {
   FaAsterisk,
   FaGlobe
 } from 'react-icons/lib/fa'
-import { MdPhotoCamera } from 'react-icons/lib/md'
+import { MdPhotoCamera, MdSchool } from 'react-icons/lib/md'
 import tromso from '../images/alberto-ivo-me.jpg'
 import { skills, languages } from '../utils/helper'
 
@@ -27,13 +28,33 @@ const About = () => (
         <FaHome size={25} /> Brasília, Brazil
       </p>
       <p>
-        <FaEnvelope size={25} /> albertoivo@gmail.com
+        <FaEnvelope size={25} />
+        <a href="mailto:albertoivo@gmail.com?Subject=Contact" target="_top">
+          albertoivo@gmail.com
+        </a>
       </p>
       <p>
-        <FaGithub size={25} /> /albertoivo
+        <FaGithub size={25} />{' '}
+        <a
+          href="https://github.com/albertoivo"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          /albertoivo
+        </a>
       </p>
       <p>
-        <MdPhotoCamera size={25} /> Portfolio
+        <MdPhotoCamera size={25} /> <Link to="/portfolio">Portfolio</Link>
+      </p>
+      <p>
+        <MdSchool size={25} />{' '}
+        <a
+          href="http://lattes.cnpq.br/7655895075112450"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Lattes
+        </a>
       </p>
 
       <hr />
@@ -54,8 +75,8 @@ const About = () => (
       </h3>
 
       <div id="languages">
-        {languages.map(lang => (
-          <div key={lang.name}>
+        {languages.map((lang, index) => (
+          <div key={index}>
             <p>{lang.name}</p>
             <div className="full-progress">
               <div
