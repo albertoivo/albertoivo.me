@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaHeart } from 'react-icons/lib/fa'
-import { MdLocalAirport, MdPhotoLibrary } from 'react-icons/lib/md'
+import { MdLocalAirport, MdPhotoLibrary, MdCode } from 'react-icons/lib/md'
 import { TiPencil } from 'react-icons/lib/ti'
 
 const Info = () => (
@@ -13,6 +13,11 @@ const Info = () => (
         <FaHeart size={64} />
         Passionate about programming, travel, photographs, learn new techs and
         share knowledge.
+      </div>
+
+      <div>
+        <MdCode size={64} />
+        Some nerd stuff that I love to write.
       </div>
 
       <div>
