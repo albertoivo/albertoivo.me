@@ -40,8 +40,7 @@ export const educations = [
   {
     title: 'Post-Graduation - Test Engineer',
     local: 'UFPE.br - Motorola',
-    initialDate: '2018',
-    finalDate: null
+    initialDate: '2018'
   },
   {
     title: 'Bachelor of Computer Science',
@@ -73,12 +72,11 @@ export const works = [
   {
     title: 'Test Engineer',
     local: 'UFPE - Motorola',
-    initialDate: '2008',
-    finalDate: null
+    initialDate: '2008'
   }
 ]
 
-export function shuffle(array) {
+export const shuffle = array => {
   let currentIndex = array.length,
     temporaryValue,
     randomIndex
@@ -89,10 +87,7 @@ export function shuffle(array) {
     array[currentIndex] = array[randomIndex]
     array[randomIndex] = temporaryValue
   }
-
   return array
 }
 
-export function skills() {
-  return shuffle(skillsArray)
-}
+export const skills = () => shuffle(skillsArray)
