@@ -15,7 +15,13 @@ const NavBar = () => (
         <Link to="/portfolio">Portfolio</Link>
       </li>
       <li>
-        <a href="https://www.instagram.com/nossasrotas/">Nossas Rotas</a>
+        <a
+          href="https://www.instagram.com/nossasrotas/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Nossas Rotas
+        </a>
       </li>
     </ul>
   </nav>

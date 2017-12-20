@@ -29,8 +29,14 @@ const Info = () => (
       <div>
         <MdLocalAirport size={64} />
         Please, get to know our travel blog and our{' '}
-        <a href="https://www.instagram.com/nossasrotas/">instagram account</a> -
-        Nossas Rotas.
+        <a
+          href="https://www.instagram.com/nossasrotas/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          instagram account
+        </a>{' '}
+        - Nossas Rotas.
       </div>
 
       <div>
