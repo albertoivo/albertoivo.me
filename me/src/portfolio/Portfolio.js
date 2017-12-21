@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from '../principal/Footer'
 import Lightbox from 'react-images'
+import { images } from '../utils/images'
 import './portfolio.css'
 
 class Portfolio extends React.Component {
@@ -16,7 +17,6 @@ class Portfolio extends React.Component {
     this.gotoNext = this.gotoNext.bind(this)
     this.gotoPrevious = this.gotoPrevious.bind(this)
     this.gotoImage = this.gotoImage.bind(this)
-
     this.openLightbox = this.openLightbox.bind(this)
   }
   openLightbox(index, event) {
@@ -63,57 +63,15 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div id="photos">
-            <a
-              href="https://placekitten.com/334/234"
-              onClick={e => this.openLightbox(0, e)}
-            >
-              <img src="https://placekitten.com/334/234" />
-            </a>
-
-            <a
-              href="https://placekitten.com/294/232"
-              onClick={e => this.openLightbox(1, e)}
-            >
-              <img src="https://placekitten.com/294/232" />
-            </a>
-
-            <a
-              href="https://placekitten.com/534/132"
-              onClick={e => this.openLightbox(2, e)}
-            >
-              <img src="https://placekitten.com/534/132" />
-            </a>
-
-            <a
-              href="https://placekitten.com/334/234"
-              onClick={e => this.openLightbox(3, e)}
-            >
-              <img src="https://placekitten.com/334/234" />
-            </a>
-
-            <a
-              href="https://placekitten.com/294/232"
-              onClick={e => this.openLightbox(4, e)}
-            >
-              <img src="https://placekitten.com/294/232" />
-            </a>
-
-            <a
-              href="https://placekitten.com/534/132"
-              onClick={e => this.openLightbox(5, e)}
-            >
-              <img src="https://placekitten.com/534/132" />
-            </a>
-
+            {images.map((img, index) => {
+              return (
+                <a onClick={e => this.openLightbox(index, e)}>
+                  <img src={img.src} />
+                </a>
+              )
+            })}
             <Lightbox
-              images={[
-                { src: 'https://placekitten.com/334/234' },
-                { src: 'https://placekitten.com/294/232' },
-                { src: 'https://placekitten.com/534/132' },
-                { src: 'https://placekitten.com/334/234' },
-                { src: 'https://placekitten.com/294/232' },
-                { src: 'https://placekitten.com/534/132' }
-              ]}
+              images={images}
               currentImage={this.state.currentImage}
               isOpen={this.state.lightboxIsOpen}
               onClickNext={this.gotoNext}
