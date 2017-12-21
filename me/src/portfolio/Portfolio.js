@@ -2,6 +2,7 @@ import React from 'react'
 import Footer from '../principal/Footer'
 import Lightbox from 'react-images'
 import { images } from '../utils/images'
+import albertoivo from '../images/alberto-ivo-me.jpg'
 import './portfolio.css'
 
 class Portfolio extends React.Component {
@@ -53,6 +54,9 @@ class Portfolio extends React.Component {
       <div>
         <div className="port-container">
           <div className="port-menu">
+            <div>
+              <img src={albertoivo} alt="alberto ivo vieira" />
+            </div>
             <div id="categories">
               <ul>
                 <li>Nature</li>
@@ -63,9 +67,15 @@ class Portfolio extends React.Component {
             </div>
           </div>
           <div id="photos">
+            <p>
+              Use your keyboard to navigate.
+              <kbd>left</kbd>
+              <kbd>right</kbd>
+              <kbd>esc</kbd>
+            </p>
             {images.map((img, index) => {
               return (
-                <a onClick={e => this.openLightbox(index, e)}>
+                <a href={img.src} onClick={e => this.openLightbox(index, e)}>
                   <img src={img.src} />
                 </a>
               )
