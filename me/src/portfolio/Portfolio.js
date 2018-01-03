@@ -8,12 +8,10 @@ import './portfolio.css'
 class Portfolio extends React.Component {
   constructor() {
     super()
-
     this.state = {
       lightboxIsOpen: false,
       currentImage: 0
     }
-
     this.closeLightbox = this.closeLightbox.bind(this)
     this.gotoNext = this.gotoNext.bind(this)
     this.gotoPrevious = this.gotoPrevious.bind(this)
@@ -76,7 +74,7 @@ class Portfolio extends React.Component {
             {images.map((img, index) => {
               return (
                 <a href={img.src} onClick={e => this.openLightbox(index, e)}>
-                  <img src={img.src} />
+                  <img src={img.src} alt={index} />
                 </a>
               )
             })}

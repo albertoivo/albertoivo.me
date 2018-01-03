@@ -20,14 +20,12 @@
   padding-bottom: 10px;
 }
 
-#categories {
+#categories ul li {
   color: #005f96;
   font-variant: small-caps;
   line-height: 3em;
-}
-
-#categories ul li {
   list-style: none;
+  font-weight: bold;
 }
 
 .port-footer {
