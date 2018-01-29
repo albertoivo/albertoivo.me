@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import Footer from '../principal/Footer'
 import Lightbox from 'react-images'
+import { images } from '../utils/images'
+import albertoivo from '../images/alberto-ivo-me.jpg'
 import './portfolio.css'
 
-class Portfolio extends Component {
+class Portfolio extends React.Component {
   constructor() {
     super()
-
     this.state = {
       lightboxIsOpen: false,
       currentImage: 0
     }
-
     this.closeLightbox = this.closeLightbox.bind(this)
     this.gotoNext = this.gotoNext.bind(this)
     this.gotoPrevious = this.gotoPrevious.bind(this)
@@ -52,6 +52,9 @@ class Portfolio extends Component {
       <div>
         <div className="port-container">
           <div className="port-menu">
+            <div>
+              <img src={albertoivo} alt="alberto ivo vieira" />
+            </div>
             <div id="categories">
               <ul>
                 <li>Nature</li>
@@ -62,17 +65,26 @@ class Portfolio extends Component {
             </div>
           </div>
           <div id="photos">
+            <p>
+              Use your keyboard to navigate.
+              <kbd>left</kbd>
+              <kbd>right</kbd>
+              <kbd>esc</kbd>
+            </p>
+            {images.map((img, index) => {
+              return (
+                <a href={img.src} onClick={e => this.openLightbox(index, e)}>
+                  <img src={img.src} alt={index} />
+                </a>
+              )
+            })}
             <Lightbox
-              images={[
-                { src: 'https://placekitten.com/334/234' },
-                { src: 'https://placekitten.com/434/334' },
-                { src: 'https://placekitten.com/234/334' },
-                { src: 'https://placekitten.com/334/434' },
-                { src: 'https://placekitten.com/434/334' }
-              ]}
+              images={images}
+              currentImage={this.state.currentImage}
               isOpen={this.state.lightboxIsOpen}
-              onClickPrev={this.gotoPrevLightboxImage}
-              onClickNext={this.gotoNextLightboxImage}
+              onClickNext={this.gotoNext}
+              onClickPrev={this.gotoPrevious}
+              onClickThumbnail={this.gotoImage}
               onClose={this.closeLightbox}
             />
           </div>
@@ -82,5 +94,4 @@ class Portfolio extends Component {
     )
   }
 }
-
 export default Portfolio

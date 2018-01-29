@@ -9,13 +9,13 @@ import {
   FaGlobe
 } from 'react-icons/lib/fa'
 import { MdPhotoCamera, MdSchool } from 'react-icons/lib/md'
-import tromso from '../images/alberto-ivo-me.jpg'
+import albertoivo from '../images/alberto-ivo-me.jpg'
 import { skills, languages } from '../utils/helper'
 
 const About = () => (
   <div>
     <div id="picture-name-about">
-      <img src={tromso} className="imageCV" alt="Alberto Ivo Vieira" />
+      <img src={albertoivo} className="imageCV" alt="Alberto Ivo Vieira" />
       <div className="display-bottomleft">
         <h2>Alberto Ivo Vieira</h2>
       </div>

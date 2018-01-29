@@ -25,9 +25,9 @@ const Contact = () => (
       <div>
         <form>
           <input type="text" placeholder="Name" required name="Name" />
-          <input type="text" placeholder="Email" required name="Email" />
+          <input type="email" placeholder="Email" required name="Email" />
           <input type="text" placeholder="Subject" required name="Subject" />
-          <input type="text" placeholder="Message" required name="Message" />
+          <textarea rows="4" placeholder="Message" required name="Message" />
           <button type="submit">
             <FaPaperPlane /> SEND MESSAGE
           </button>
