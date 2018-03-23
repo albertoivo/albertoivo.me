@@ -22,10 +22,10 @@ const About = () => (
     </div>
     <div id="cv-content">
       <p>
-        <FaBriefcase size={25} /> Full Stack Developer
+        <FaBriefcase size={25} /> Full Stack Web Developer
       </p>
       <p>
-        <FaHome size={25} /> Brasília, Brazil
+        <FaHome size={25} /> Bras&iacute;lia, Brazil
       </p>
       <p>
         <FaEnvelope size={25} />

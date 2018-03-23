@@ -1,4 +1,5 @@
 const skillsArray = [
+  'Full Stack',
   'Java',
   'React',
   'React Native',
@@ -25,6 +26,12 @@ export const languages = [
 ]
 
 export const educations = [
+  {
+    title: 'Nanodegree Full Stack Web Developer',
+    local: 'Udacity.com',
+    initialDate: '2018',
+    finalDate: 'in progress'
+  },
   {
     title: 'Nanodegree React Developer',
     local: 'Udacity.com',

@@ -3,7 +3,8 @@ import {
   FaMapMarker,
   FaEnvelope,
   FaLinkedinSquare,
-  FaPaperPlane
+  FaPaperPlane,
+  FaGithub
 } from 'react-icons/lib/fa'
 
 const Contact = () => (
@@ -13,7 +14,7 @@ const Contact = () => (
     <div id="contact">
       <div id="contact-info">
         <p>
-          <FaMapMarker /> Brasília, Brazil
+          <FaMapMarker /> Bras&iacute;lia, Brazil
         </p>
         <p>
           <FaEnvelope /> albertoivo@gmail.com
@@ -21,11 +22,14 @@ const Contact = () => (
         <p>
           <FaLinkedinSquare /> /alberto-ivo-vieira
         </p>
+        <p>
+          <FaGithub /> /albertoivo
+        </p>
       </div>
       <div>
         <form>
           <input type="text" placeholder="Name" required name="Name" />
-          <input type="email" placeholder="Email" required name="Email" />
+          <input type="email" placeholder="E-mail" required name="Email" />
           <input type="text" placeholder="Subject" required name="Subject" />
           <textarea rows="4" placeholder="Message" required name="Message" />
           <button type="submit">

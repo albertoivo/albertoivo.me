@@ -28,7 +28,7 @@ const Info = () => (
 
       <div>
         <MdLocalAirport size={64} />
-        Please, get to know our travel blog and our{' '}
+        Please, get to know our our{' '}
         <a
           href="https://www.instagram.com/nossasrotas/"
           target="_blank"
