@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Footer from '../principal/Footer'
 import Lightbox from 'react-images'
 import { images } from '../utils/images'
