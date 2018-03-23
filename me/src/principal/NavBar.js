@@ -1,12 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { GoX } from 'react-icons/lib/go'
 
 const NavBar = () => (
   <nav id="nav">
-    <a className="toggle close" href="#">
-      <GoX />
-    </a>
+    <a className="toggle close" href="#">x</a>
     <ul>
       <li>
         <Link to="/curriculum">Curriculum Vitae</Link>

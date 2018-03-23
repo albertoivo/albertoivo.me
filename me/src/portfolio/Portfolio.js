@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Footer from '../principal/Footer'
 import Lightbox from 'react-images'
-import { images } from '../utils/images'
+import { natures, portraits } from '../utils/images'
 import albertoivo from '../images/alberto-ivo-me.jpg'
 import './portfolio.css'
 
@@ -10,13 +10,17 @@ class Portfolio extends React.Component {
     super()
     this.state = {
       lightboxIsOpen: false,
-      currentImage: 0
+      currentImage: 0,
+      nature: false,
+      portrait: false,
     }
     this.closeLightbox = this.closeLightbox.bind(this)
     this.gotoNext = this.gotoNext.bind(this)
     this.gotoPrevious = this.gotoPrevious.bind(this)
     this.gotoImage = this.gotoImage.bind(this)
     this.openLightbox = this.openLightbox.bind(this)
+    this.handleNature = this.handleNature.bind(this)
+    this.handlePortrait = this.handlePortrait.bind(this)
   }
   openLightbox(index, event) {
     event.preventDefault()
@@ -46,8 +50,21 @@ class Portfolio extends React.Component {
       currentImage: index
     })
   }
+  handleNature() {
+    this.setState({
+      nature: true,
+      portrait: false
+    })
+  }
+  handlePortrait() {
+    this.setState({
+      nature: false,
+      portrait: true
+    })
+  }
 
   render() {
+    const { nature, portrait } = this.state
     return (
       <div>
         <div className="port-container">
@@ -57,21 +74,24 @@ class Portfolio extends React.Component {
             </div>
             <div id="categories">
               <ul>
-                <li>Nature</li>
-                <li>Portrait</li>
+                <li>
+                  <a href="#" onClick={this.handleNature}>
+                    Nature
+                  </a>
+                </li>
+                <li>
+                  <a href="#" onClick={this.handlePortrait}>
+                    Portrait
+                  </a>
+                </li>
                 <li>Northern Lights</li>
                 <li>Selective Color</li>
               </ul>
             </div>
           </div>
           <div id="photos">
-            <p>
-              Use your keyboard to navigate.
-              <kbd>left</kbd>
-              <kbd>right</kbd>
-              <kbd>esc</kbd>
-            </p>
-            {images.map((img, index) => {
+
+            {nature && natures.map((img, index) => {
               return (
                 <a href={img.src} onClick={e => this.openLightbox(index, e)}>
                   <img src={img.src} alt={index} />
@@ -79,7 +99,24 @@ class Portfolio extends React.Component {
               )
             })}
             <Lightbox
-              images={images}
+              images={natures}
+              currentImage={this.state.currentImage}
+              isOpen={this.state.lightboxIsOpen}
+              onClickNext={this.gotoNext}
+              onClickPrev={this.gotoPrevious}
+              onClickThumbnail={this.gotoImage}
+              onClose={this.closeLightbox}
+            />
+
+            {portrait && portraits.map((img, index) => {
+              return (
+                <a href={img.src} key={index} onClick={e => this.openLightbox(index, e)}>
+                  <img src={img.src} alt={index} />
+                </a>
+              )
+            })}
+            <Lightbox
+              images={portraits}
               currentImage={this.state.currentImage}
               isOpen={this.state.lightboxIsOpen}
               onClickNext={this.gotoNext}

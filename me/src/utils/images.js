@@ -1,4 +1,4 @@
-export const images = [
+export const natures = [
   { src: 'https://placekitten.com/394/294' },
   { src: 'https://placekitten.com/294/232' },
   { src: 'https://placekitten.com/534/132' },
@@ -35,4 +35,12 @@ export const images = [
   { src: 'https://placekitten.com/334/234' },
   { src: 'https://placekitten.com/294/232' },
   { src: 'https://placekitten.com/534/132' }
+]
+
+export const portraits = [
+  { src: 'https://placekitten.com/394/294' },
+  { src: 'https://placekitten.com/294/232' },
+  { src: 'https://placekitten.com/534/132' },
+  { src: 'https://placekitten.com/334/234' },
+  { src: 'https://placekitten.com/394/232' },
 ]
