@@ -52,10 +52,6 @@ nav a:hover {
   margin: 10px;
 }
 
-#info > div {
-  text-align: center;
-}
-
 #info div svg {
   display: table-row;
   padding: 10px 0;
@@ -64,6 +60,19 @@ nav a:hover {
 #info-key {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#info-key div {
+  vertical-align: center;
+}
+
+#info-key section svg {
+  float: left;
+}
+
+#info-key section div {
+  text-align: center;
+  vertical-align: center;
 }
 
 .princ-footer {

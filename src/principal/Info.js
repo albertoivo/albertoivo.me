@@ -9,41 +9,48 @@ const Info = () => (
     <p className="section-title">Information</p>
     <p className="section-subtitle">Key features</p>
     <div id="info-key">
-      <div>
+      <section>
         <FaHeart size={64} />
-        Passionate about programming, travel, photographs, learn new techs and
-        share knowledge.
-      </div>
+        <div>
+          Passionate about programming, travel, photographs, and
+          share knowledge.
+        </div>
+      </section>
 
-      <div>
+      <section>
         <MdCode size={64} />
-        Some nerd stuff that I love to write.
-      </div>
+        <div>
+          Some nerd stuff that I love to{' '}
+          <a href="https://albertoivo.github.io/" target="_blank" rel="noopener noreferrer">write</a>.
+        </div>
+      </section>
 
-      <div>
+      <section>
         <MdPhotoLibrary size={64} />
-        Visit my <Link to="/portfolio">portfolio</Link>. Some photos taken in
-        our travels.
-      </div>
+        <div>
+          Visit my <Link to="/portfolio">portfolio</Link>. Some photos taken in
+          our travels.
+        </div>
+      </section>
 
-      <div>
+      <section>
         <MdLocalAirport size={64} />
-        Please, get to know our our{' '}
-        <a
-          href="https://www.instagram.com/nossasrotas/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          instagram account
-        </a>{' '}
-        - Nossas Rotas.
-      </div>
+        <div>
+          Please, get to know our our{' '}
+          <a href="https://www.instagram.com/nossasrotas/"
+            target="_blank" rel="noopener noreferrer">
+            instagram account
+          </a>{' '}
+            - Nossas Rotas.
+        </div>
+      </section>
 
-      <div>
+      <section>
         <TiPencil size={64} />
-        A <Link to="/curriculum">little</Link> about my academic and
-        professional life.
-      </div>
+        <div>
+          A <Link to="/curriculum">little</Link> about my academic and professional life.
+        </div>
+      </section>
     </div>
   </div>
 )

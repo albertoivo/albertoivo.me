@@ -27,10 +27,16 @@ export const languages = [
 
 export const educations = [
   {
+    title: 'Nanodegree Funadamentals of Machine Learning',
+    local: 'Udacity.com',
+    initialDate: '2018',
+    finalDate: '2018'
+  },
+  {
     title: 'Nanodegree Full Stack Web Developer',
     local: 'Udacity.com',
     initialDate: '2018',
-    finalDate: 'in progress'
+    finalDate: '2018'
   },
   {
     title: 'Nanodegree React Developer',
@@ -78,7 +84,7 @@ export const works = [
   },
   {
     title: 'Test Engineer',
-    local: 'UFPE - Motorola',
+    local: 'UFPE.br - Motorola',
     initialDate: '2008'
   }
 ]
